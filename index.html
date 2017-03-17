@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>
+        Вертолёт Яндекс
+    </title>
+    <link rel="stylesheet" href="css/style.css?ver=2">
+</head>
+<body>
+<div id="map"></div>
+<div id="helicopter"></div>
+<div id="images"></div>
+
+<div id="buttons">
+    <button type="button" onclick="startMission(0, null)">Миссия 1 - Растральные</button>
+    <button type="button" onclick="startMission(1, null)">Миссия 2 - Всадник</button>
+    <button type="button" onclick="startMission(2, null)">Фонтанка</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.x-git.min.js"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/curve.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

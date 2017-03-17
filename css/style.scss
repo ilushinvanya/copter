@@ -1,0 +1,52 @@
+* {
+	  margin: 0;
+	  padding: 0;
+}
+
+
+#map {
+	  width: 100%;
+	  height: 100vh;
+}
+
+#helicopter {
+	  background-image: url(../copter/0.png);
+	  background-repeat: no-repeat;
+	  width: 100px;
+	  height: 100px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  margin-top: -50px;
+	  margin-left: -50px;
+	  background-size: cover;
+	  &:after {
+			position: absolute;
+			width: 56px;
+			height: 32px;
+			content: '';
+			background-image: url('../rotors.gif');
+			top: 17px;
+			left: 21px;
+	  }
+}
+
+#images {
+	  background-image: url(../copter/0.png), url(../copter/15.png), url(../copter/30.png), url(../copter/45.png), url(../copter/60.png), url(../copter/75.png), url(../copter/90.png), url(../copter/105.png), url(../copter/120.png), url(../copter/135.png), url(../copter/150.png), url(../copter/165.png), url(../copter/180.png), url(../copter/195.png), url(../copter/210.png), url(../copter/225.png), url(../copter/240.png), url(../copter/255.png), url(../copter/270.png), url(../copter/285.png), url(../copter/300.png), url(../copter/315.png), url(../copter/330.png), url(../copter/345.png);
+}
+#buttons {
+	  position: absolute;
+	  top: 17%;
+	  margin-top: -30px;
+	  right: 27px;
+	  button {
+			padding: 5px;
+			height: 28px;
+			border-radius: 3px;
+			border-width: 1px;
+			background: -webkit-linear-gradient(top, rgb(254, 254, 254) 0, rgb(238, 238, 238) 100%);
+			display: block;
+			margin-bottom: 10px;
+			outline: none;
+	  }
+}
