@@ -22,7 +22,7 @@
     width: 56px;
     height: 32px;
     content: '';
-    background-image: url("../rotors.gif");
+    background-image: url("/img/rotors.gif");
     top: 17px;
     left: 21px; }
 
@@ -39,9 +39,9 @@
     height: 28px;
     border-radius: 3px;
     border-width: 1px;
-    background: -webkit-linear-gradient(top, #fefefe 0, #eeeeee 100%);
     display: block;
     margin-bottom: 10px;
-    outline: none; }
+    outline: none;
+  }
 
 /*# sourceMappingURL=style.css.map */
