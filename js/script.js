@@ -5,8 +5,7 @@
 var angleArr = [];
 for (i = 0; i <= 24; i++) {
     angleArr.push(i * 15);
-}
-;
+};
 var map;
 var copter;
 var keys = {};
@@ -18,7 +17,9 @@ var timeout;
 ymaps.ready(function () {
     map = new ymaps.Map('map', {
         center: center,
-        zoom: 19
+        zoom: 19,
+        behaviors: [],
+        controls: [],
     }, {
         geoObjectDraggable: false,
         geoObjectOverlayFactory: 'default#interactiveGraphics'
@@ -68,10 +69,6 @@ $(document).keydown(function (e) {
 });
 
 var easing = BezierEasing(.85,0,.65,.66);
-console.log(); // 0.0
-console.log(easing(0.5)); // 0.3125
-console.log(easing(1)); // 1.0
-
 
 $(document).keyup(function (e) {
     delete keys[e.which];
@@ -144,7 +141,7 @@ var missions = {
             [59.943269, 30.306965],
             [59.944840, 30.305046]
         ],
-        icon: 'fire.png',
+        icon: 'img/fire.png',
         iconSize: [50, 50],
         fin: 'Молодец, ты выполнил задание'
     },
@@ -153,7 +150,7 @@ var missions = {
         points: [
             [59.936454, 30.302201]
         ],
-        icon: 'vsadnik.png',
+        icon: 'img/vsadnik.png',
         iconSize: [50, 50],
         fin: 'Молодец, ты выполнил задание'
     },
@@ -171,7 +168,7 @@ var missions = {
             [59.932796, 30.314387],
             [59.933216, 30.316083]
         ],
-        icon: 'circle.png',
+        icon: 'img/circle.png',
         iconSize: [50, 50],
         fin: 'Молодец, ты выполнил задание'
     }
