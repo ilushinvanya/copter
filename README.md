@@ -34,4 +34,4 @@
 
 ## Открыть игру
 
-https://ilushinvanya.ru/list/racing/
+https://ilushinvanya.github.io/copter/
